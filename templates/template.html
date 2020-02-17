@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Flask Parent Template</title>
+  
+ </head>
+ <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Puerile Odes Emitted Tirelessly (P.O.E.T)</h1>
+        <strong><nav>
+          <!--<ul class="menu">-->
+            <!--<li><a href="{{ url_for('home') }}">Home</a></li>-->
+            <!--<li><a href="{{ url_for('about') }}">About</a></li>-->
+            <!--<li><a href="{{ url_for('make') }}">Make</a></li>-->
+          <!--</ul>-->
+          <a href="{{ url_for('home') }}">Home</a>
+          <a href="{{ url_for('make') }}">Make</a>
+          <a href="{{ url_for('about') }}">About</a>
+        </nav></strong>
+      </div>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+    <b> by Kyle Klarup</b>
+ </body>
+</html>

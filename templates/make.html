@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Poem Generator</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+  
+  
+    <h1> Have the AI generate a poem </h1> 
+
+    
+    <form action= "{{ url_for('generatedPoem') }}">
+      <button type = "submit">Generate Poem</button>
+    </form>
+    (This make take a few moments...)</p>
+
+    {% endblock %}
+  </body>
+</html>

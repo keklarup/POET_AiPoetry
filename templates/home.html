@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Tutorial</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    
+    <h1> Welcome to P.O.E.T!</h1>
+    <p>P.O.E.T is a simple AI system for generating sub-par love poetry<br />
+    The AI can either generate a poem for you 
+    or help you in crafting the perfect work yourself.
+    Current pages available on this web application:</p>
+    <ul class="menu">
+            <li><b>Home</b></li>
+            This landing page
+            <li><b>Make</b></li>
+            Have P.O.E.T. generate a poem for you!
+            <li><b>About</b></li>
+            Learn more about this project.
+    </ul>
+    
+    {% endblock %}
+  </body>
+</html>

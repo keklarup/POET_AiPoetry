@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Flask</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+  
+  
+    <h1> About P.O.E.T </h1>
+    
+    This site is an attempt to make the usage of P.O.E.T easier 
+    for anyone not named Kyle Klarup.
+    It is the first web application I have ever made, 
+    and the first time I have used Azure. 
+    Which shows in the design...</p>
+    <p> I hope this application serves its purpose 
+    by making P.O.E.T available to a public audience</p>
+    
+    
+    <h3>What is P.O.E.T?</h3>
+    <p>P.O.E.T. is a little AI that uses 'deep learning' 
+    in the form of a long-short term memory (LSTM) neural network
+    to generate love poetry.
+    Deep learning is in quotes because the current version is very shallow.</p>
+    
+    <h3> What all went into making P.O.E.T?</h3>
+    <p> Ooh, good question! A bunch of steps:</p>
+    <ul class="menu">
+      <li>Finding and gathering free, publically available poetry</li>
+      <li>Installing the necessary software to train an AI with a laptop GPU</li>
+      <li>Writing the code to get the training poems into a usable format</li>
+      <li>Building the code architecture to train the AI</li>
+      <li>Training the AI and tweaking hyperparameters 
+      (took hours to days) for each parameter set </li>
+      <li>Writing code for all the ways the AI could generate poems 
+      (deterministic, probabilistic, with user input, etc.) </li>
+      <li>Finding a web application service</li>
+      <li>Building basic web pages and calls for getting poems</li>
+      <li>Deploying the web application on the cloud so that others could use it</li>
+    </ul>
+    
+    <h3> P.O.E.T. seems a bit rough around the edges... </h3>
+    <p>First, that's not a question.</p>
+    <p>Second, P.O.E.T. is a hobby project.
+    I work on P.O.E.T for an hour or 2 here or there 
+    when not at work, spending time with my family, or working on a different hobby project!
+    With all the steps needed to get something across the finish line,
+    I embraced the 'minimum viable product' idea.</p>
+    <p>But yeah, it's not getting the hours a production system would get.</p>
+    
+    <h3>Who can I blame for P.O.E.T?</h3>
+    <p> P.O.E.T is a hobby project of Kyle Klarup, 
+    physicist turned data scientist.</p>
+    
+    <h3>How was P.O.E.T. created?</h3>
+    <p>The LSTM was trained on some of the easiest to find, 
+    publically available love poetry on the internet.
+    It was also trained using a laptop's GPU. Because of that, 
+    the amount of data and the size of the LSTM were limited.</p>
+    <p>Why? Because P.O.E.T. was a hobby project,
+     there was a limited amount of time to get the system trained.
+    The result is poetry that kinda looks right, but is mostly nonsense.</p>
+    <p>Once the model was trained, 
+    the hobby project turned towards using the AI to generate poetry.
+    For a time the code lived in Jupyter Notebooks. 
+    And recently one of those notebooks was made live on Binder.
+    However, this still wasn't very user friendly.</p> 
+    <p>Enter this little web application.</p>
+    
+    <h3>Where is P.O.E.T.'s source code?</h3>
+    <p>The source code may be found 
+    <a href=https://github.com/keklarup/POET_AiPoetry>here</a></p>
+    
+    
+    {% endblock %}
+  </body>
+</html>
